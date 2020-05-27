@@ -1,0 +1,19 @@
+USE centralizer;
+
+CREATE TABLE sql_updates (
+	id INT(10) NOT NULL AUTO_INCREMENT,
+	id_global INT(11) NOT NULL,
+	command TEXT NOT NULL,
+	description TEXT NULL DEFAULT NULL,
+	created_at DATETIME NULL DEFAULT NULL,
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE ssh_updates (
+	id INT(10) NOT NULL AUTO_INCREMENT,
+	id_global INT(11) NOT NULL,
+	command TEXT NOT NULL,
+	description TEXT NULL DEFAULT NULL,
+	created_at DATETIME NULL DEFAULT NULL,
+	PRIMARY KEY (id)
+);
